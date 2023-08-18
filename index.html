@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>丸子引导页</title>
+    <!-- HTML -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bc.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+    <script src="//at.alicdn.com/t/c/font_3550141_d8avl91po3f.js"></script>
+  
+<style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+</style>
+<body style="max-width: 768px; margin: auto;">
+  <div class="bc_content">
+    <div class="bc-fluid">
+      <div class="bc-row bc-space10">
+        <div class="bc-xs12">
+          <div class="bc_mbl bc_box" id="bc_mobile_head">
+            <div class="bc-row">
+              <div class="bc-xs3">
+                <img class="bc_mbl bc_box img-avatar " style="border-radius: 50%;" src="//q4.qlogo.cn/headimg_dl?dst_uin=3274773833&spec=100"/>
+              </div>
+              <div class="bc-xs9">
+                <div class="bc-xs12">
+                  <div id="bc_name">丸子</div>
+                  <div id="bc_tip"> Tips：四年小店、感谢支持！</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bc-row bc-space10">
+           <div class="bc-xs6">
+          <div class="bc_box bc_mbl bc_center">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weixin"></use>
+            </svg>
+            zezechat
+         </div>
+        </div>
+           <div class="bc-xs6">
+          <div class="bc_box bc_mbl bc_center">
+           <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-QQ"></use>
+        </svg>
+            3274773833</div>
+        </div>
+    
+      </div>
+    
+      <div class="bc-row bc-space10">
+        <div class="bc-xs12">
+          <div class="bc_box bc_mbl">
+            <div class="bc-row">
+              <h3 class="bc-xs12 bc_box">我的小站</h3>
+              <hr>
+            </div>
+            <div class="bc-row bc-space10" style="word-wrap:break-word;">
+              <a lay-on="wangke" class="bc-xs12 bc-sm4 bc-md4 bc-lg4" style="margin-top:20px">
+                <div class="bc_a btn-orange bc_center"> 
+                <svg class="icon" aria-hidden="true">
+                     <use xlink:href="#icon-mianxingwangke"></use>
+                </svg>
+                  网课小铺</div>
+                  
+              </a>
+
+                 <a lay-on="zaihuo"  class="bc-xs12 bc-sm4 bc-md4 bc-lg4" style="margin-top:20px">
+                <div class="bc_a btn-blue bc_center"> 
+                 <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shangdian"></use>
+            </svg>
+                  杂货小铺</div>
+              </a>
+              
+ 
+              <a lay-on="dingdan"   class="bc-xs12 bc-sm4 bc-md4 bc-lg4" style="margin-top:20px">
+                <div class="bc_a btn-purple bc_center"> 
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-yewuchaxun"></use>
+            </svg>
+                订单查询</div>
+              </a>
+              
+                <a lay-on="gongzhonghao" class="bc-xs12 bc-sm4 bc-md4 bc-lg4" style="margin-top:20px;margin-bottom:20px">
+                <div class="bc_a btn-green bc_center"> 
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-daan"></use>
+            </svg>
+                网课答案</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="bc-row bc-space10">
+        <div class="bc-xs12">
+          <div class="bc_mbl bc_box" id="bc_foot">
+            <p align="center">本站总访问量<?php echo "$counter";?><p><br>
+            <p id="runtime_span"></p><br>
+            Copyright © 2023 zezechat
+            <span class="btn bc-hide-xs">收藏本站（快捷键<code>Ctrl+D</code>）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+<script>
+layui.use('layer', function(){
+var layer = layui.layer;
+var util = layui.util;
+
+util.on('lay-on', {
+wangke: function(){
+     layer.msg('正在前往网课小铺');
+          window.location.href="http://shop.zezechat.cn/"
+},
+zaihuo: function(){
+     layer.msg('正在前往杂货小铺');
+          window.location.href="http://buy.zezechat.cn/"
+},
+dingdan: function(){
+    layer.msg('正在前往订单查询');
+          window.location.href="http://query.zezechat.cn/"
+
+},
+gongzhonghao: function(){
+  layer.msg('微信公众号：晚雾查单');
+
+},
+});
+
+});
+
+</script>
+<script type="text/javascript">
+function show_runtime(){
+    window.setTimeout("show_runtime()",1000);
+    X=new Date("12/21/2022 0:00:00");
+    Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
+    a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
+    runtime_span.innerHTML="本站勉强运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"
+}
+show_runtime();
+</script>
+
+<script>
+const handler = setInterval(function () { console.clear(); const before = new Date(); debugger; const after = new Date(); const cost = after.getTime() - before.getTime(); if (cost > 100) { } }, 1);
+        //屏蔽右键菜单
+        document.oncontextmenu = function (event) {
+            if (window.event) {
+                event = window.event;
+            }
+            try {
+                var the = event.srcElement;
+                if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+                    return false;
+                }
+                return true;
+            } catch (e) {
+                return false;
+            }
+        }
+        //禁止f12
+        function fuckyou() {
+            window.open("/", "_blank"); //新窗口打开页面
+            window.close(); //关闭当前窗口(防抽)
+            window.location = "about:blank"; //将当前窗口跳转置空白页
+        }
+         //禁止Ctrl+U
+        var arr = [123, 17, 18];
+        document.oncontextmenu = new Function("event.returnValue=false;"), //禁用右键
+ 
+            window.onkeydown = function (e) {
+                var keyCode = e.keyCode || e.which || e.charCode;
+                var ctrlKey = e.ctrlKey || e.metaKey;
+                console.log(keyCode + "--" + keyCode);
+                if (ctrlKey && keyCode == 85) {
+                    e.preventDefault();
+                }
+                if (arr.indexOf(keyCode) > -1) {
+                    e.preventDefault();
+                }
+            }
+</script>
+</body>
+
+</html>
