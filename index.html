@@ -41,7 +41,8 @@
                   <div id="bc_tip" style="white-space:nowrap;"> Tips：四年小店、感谢支持！</div>
                 </div>
                 <div class="bc-xs3" style="float: right;">
-                  <img style="border-radius: 0%;margin-top: 5%;margin-right: 5%;width: 64px;height: 64px;" src="./vx.jpg" />
+                  <img style="border-radius: 0%;margin-top: 5%;margin-right: 5%;width: 64px;height: 64px;"
+                    src="./vx.jpg" />
                 </div>
               </div>
             </div>
@@ -83,7 +84,7 @@
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-mianxingwangke"></use>
                   </svg>
-                  网课小铺
+                  ai对话 ai生图
                 </div>
               </a>
               <a lay-on="zaihuo" class="bc-xs12 bc-sm4 bc-md4 bc-lg4"
@@ -101,10 +102,10 @@
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-yewuchaxun"></use>
                   </svg>
-                  订单查询
+                  流量卡商城
                 </div>
               </a>
-              <a lay-on="gongzhonghao" class="bc-xs12 bc-sm4 bc-md4 bc-lg4"
+              <!-- <a lay-on="gongzhonghao" class="bc-xs12 bc-sm4 bc-md4 bc-lg4"
                 style="width: 100%;text-align: center;margin-top:20px;cursor:pointer;">
                 <div class="bc_a btn-green bc_center" style="width: 90%;margin: 0 auto; padding: 10px 0; ">
                   <svg class="icon" aria-hidden="true">
@@ -112,7 +113,7 @@
                   </svg>
                   网课答案
                 </div>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -137,22 +138,21 @@
 
       util.on('lay-on', {
         wangke: function () {
-          layer.msg('正在前往网课小铺');
-          window.location.href = "http://shop.zezechat.cn/"
+          layer.msg('正在前往chatgpt');
+          window.location.href = "http://chatgpt.aisiteru.cn/"
         },
         zaihuo: function () {
           layer.msg('正在前往杂货小铺');
-          window.location.href = "http://buy.zezechat.cn/"
+          window.location.href = "https://aisiteru.cn/"
         },
         dingdan: function () {
-          layer.msg('正在前往订单查询');
-          window.location.href = "http://query.zezechat.cn/"
+          layer.msg('正在前往流量卡商城');
+          window.location.href = "https://haokawx.lot-ml.com/Product/Index/290129/"
 
         },
-        gongzhonghao: function () {
-          layer.msg('微信公众号：晚雾查单');
-
-        },
+        // gongzhonghao: function () {
+        //   layer.msg('微信公众号：晚雾查单');
+        // },
       });
 
     });
