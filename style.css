@@ -97,6 +97,9 @@ body {
 .btn-yellow {
 	background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
 }
+.btn-pink {
+	background-image: linear-gradient(277deg, #f86fb3, #ff7676);
+}
 #bc_foot {
 	text-align: center;
 }
@@ -113,4 +116,3 @@ body {
 		padding: 5px;
 	}
 }
-
